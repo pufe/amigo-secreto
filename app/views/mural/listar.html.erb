@@ -1,0 +1,10 @@
+<h1>Escolha um mural para deixar um recado!</h1>
+<div class="caixa">
+  <% @lista.each do |mural| %>
+  <a href="<%= mural_path(mural.id) -%>">
+    <div class="seletor">
+      <h4><%= mural.dono -%></h4>
+    </div>
+  </a>
+  <% end %>
+</div>
