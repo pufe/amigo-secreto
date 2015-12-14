@@ -1,0 +1,26 @@
+// Place all the styles related to the Mural controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.seletor {
+  border: 1px solid;
+  border-color: dark-gray;
+  margin: 10px;
+  background-color: #cccccc;
+  width: 300px;
+  display: inline-block;
+}
+h1 {
+  text-align: center;
+}
+.caixa {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+}
+textarea {
+  resize: none;
+}

@@ -8,6 +8,7 @@ capybara-*.html
 /public/system
 /coverage/
 /spec/tmp
+/bin
 **.orig
 rerun.txt
 pickle-email-*.html
@@ -33,3 +34,6 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+# Ignore emacs backup files
+*~

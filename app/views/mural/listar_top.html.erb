@@ -1,0 +1,10 @@
+<h1>Escolha um mural para deixar um recado!</h1>
+<div class="caixa">
+  <% @lista.each do |mural| %>
+  <a href="/<%= mural[:id] -%>">
+    <div class="seletor">
+      <h4><%= "#{mural[:dono]} - #{mural[:recados]}" -%></h4>
+    </div>
+  </a>
+  <% end %>
+</div>

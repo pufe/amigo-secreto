@@ -1,0 +1,20 @@
+<div class="title">
+  <h1>Mural de recados de <%= @mural.dono -%></h1>
+</div>
+<div>
+  <% @recados.each do |recado| %>
+  <div>
+    <p><%= recado.mensagem.html_safe -%></p>
+  </div>
+  <% end %>
+  <div>
+    <h4>Deixe aqui seu recado para <%= @mural.dono -%>:</h4>
+    <%= form_tag(enviar_path(@mural.id), method: "post") do %>
+    <%= text_area_tag(:m, nil, rows: 5, cols: 80) %>
+    <%= submit_tag("Enviar!") %>
+    <% end %>
+  </div>
+</div>
+<div class="footer">
+  <h4><a href="<%= root_path -%>">Voltar</a></h4>
+</div>
